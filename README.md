@@ -22,7 +22,10 @@ Before running the script for the first time, make sure you have:
 
 2. Check the prerequisites.
 
-3. python find-git-commit.py
+3. Run
+    ```bash
+    python find-git-commit.py
+    ```
 
 ## Notes
 - This script requires an internet connection to interact with the GitHub API.
