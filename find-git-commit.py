@@ -57,6 +57,7 @@ def get_previous_commit(repo_owner, repo_name, fix_commit_hash):
         # Return the second commit in the list (before the fix commit)
         return commits[1]["sha"]
     
+    
     except Exception as e:
         print(f"Exception: {e}")
         return None
@@ -79,6 +80,7 @@ def main():
     if previous_commit:
         print(f"The commit before the fix is: {previous_commit}")
         print(f"Link to the commit: https://github.com/{repo_owner}/{repo_name}/commit/{previous_commit}")
+        print(f"Link to the previous code tree: https://github.com/{repo_owner}/{repo_name}/tree/{previous_commit}")
 
 # Run the main function
 if __name__ == "__main__":
